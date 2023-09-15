@@ -1,0 +1,6 @@
+a:focus{
+outline: 2px solid black;
+}
+img{
+    border: 2px dashed blue;
+}

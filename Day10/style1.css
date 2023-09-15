@@ -1,0 +1,50 @@
+.container{
+    border: 2px solid black;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+.cards1{
+    
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin:20px;
+    border-radius: 20%;
+    /* position: relative; */
+    /* top: 0px; */
+}
+.cards2{
+    
+    background-color: aquamarine;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin:20px;
+    border-radius: 20%;
+    position: relative;
+    left: 350px;
+    bottom: 120px
+}
+.cards3{
+    
+    background-color: blanchedalmond;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin:20px;
+    border-radius: 20%;
+    position: relative;
+    left: 350px;
+    top: 120px
+}
+.cards4{
+    
+    background-color: blueviolet;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin:20px;
+    border-radius: 20%;
+}

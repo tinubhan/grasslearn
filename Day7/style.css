@@ -1,0 +1,16 @@
+h1{
+    background-color: #EE4B2B;
+    text-align: center;
+    text-decoration: dashed;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+body
+{
+    /* background-color: #EE4B2B; */
+    /* background-image: url(../Day-3/images/Image_for_office_dp.jpg); */
+    background-repeat: no-repeat;
+    background-image: linear-gradient(50deg,red, yellow);
+}
+

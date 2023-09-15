@@ -1,0 +1,37 @@
+thead{
+    background-color: black;
+    color:white;
+    padding: 10px;
+}
+table{
+    /* max-width: 1000px; */
+    /* border: 2px solid black; */
+    border-collapse: separate;
+    width: 400px;
+}
+.container{
+    
+    max-width: 800px;
+    min-width: 200px;
+}
+tr{
+   
+    padding: 140px;
+    width: 350px;
+    outline: rgb(144, 96, 37) thin blur;
+    /* outline-offset: -12px; */
+    /* outline-width: 1px; */
+    /* outline-style: dotted; */
+    /* border-spacing: 5000px; */
+    /* border: 2px solid black; */
+    
+}
+td{
+    padding: 40px;
+    /* border: 2px solid black; */
+}
+.row1 ,.row2{
+    outline-offset: -12px;
+    box-shadow: 0px 0px 20px 2px gray inset;
+}
+

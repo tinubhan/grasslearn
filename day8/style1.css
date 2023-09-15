@@ -1,0 +1,24 @@
+.big-box{
+    display: flex; 
+    height: 200px;
+    width:90%;
+    padding: 50px;
+    box-shadow: 0 0 20px;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(50deg ,red,rgb(230, 48, 247));
+    color: white;
+    transition: transform 0.3s;
+}
+.big-box:hover{
+
+    /* transform: rotate(180deg); */
+    text-transform:none;
+    background-image: linear-gradient(150deg ,rgb(230, 48, 247),red);
+    transform: scale(1.1);
+
+    text-decoration-skip:initial;
+    
+
+    
+}

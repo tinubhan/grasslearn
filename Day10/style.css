@@ -1,0 +1,16 @@
+div{
+    /* display: inline; */
+    /* max-width: 400px; */
+}
+p{
+    display: inline;
+    max-width: 800px;
+}
+span{
+    /* display: inline-block; */
+    background-color: green;
+    width: 400px;
+    display: inline;
+    display:none;
+    visibility: hidden;
+}

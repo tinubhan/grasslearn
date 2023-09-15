@@ -1,0 +1,35 @@
+thead{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+   
+
+
+}
+table{
+    border: 5px solid black;
+    width: 800px;
+    text-align: center;
+ 
+
+}
+tr{
+    padding: 10px;
+}
+td{
+    padding: 10px;
+}
+.container{
+   
+    max-width: 100%;
+    margin: 0 auto;
+}
+.row1{
+    color:rgb(167, 104, 28);
+    background-color: aqua;
+}
+.row2{
+    color: blueviolet;
+    background-color: bisque;
+}

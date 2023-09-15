@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <style>
+      .container{
+            display: flex;
+            border: 2px solid black;
+            text-align: center;
+            /* height: 100vh */
+            margin-top: 2px;
+            /* justify-content: center; */
+            height: 25px;
+            width: 550px;
+            align-items: center;
+            position: absolute;
+            bottom: 200px;
+            left: 320px;
+            background-color: white;
+            border: none;
+        }
+      
+
+      img {
+        width: 90%;
+        height: 500px;
+        image-resolution: 272dpi;
+        position: relative;
+      }
+      .form-select {
+        border: none;
+      }
+      i{
+        margin-left: 2px;
+      }
+      p{
+        font-size: smaller;
+      }
+      .fa-location-dot{
+        color: red;
+      }
+      h1{
+        position: absolute;
+        bottom: 300px;
+        left:450px;
+        font-size: 70px;
+        font-family: cursive;
+        color: white;
+      }
+      h4{
+        font-weight: normal;
+        position: absolute;
+        bottom: 250px;
+        left:300px;
+        font-size: 30px;
+        font-family: cursive;
+        color: white;
+      }
+      .fa-magnifying-glass{
+        margin-left: 20px;
+      }
+      input{
+        width: 40 0px;
+        border: none;
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+    <img src="../Day-3/images/foodhighresol.jpg" alt="" />
+    <h1>zomato</h1>
+    <h4>Discover best food and drinks in Jaipur</h4>
+    <div class="container">
+       <i class="fa fa-location-dot"></i>
+            <select id="city" name="city" class="form-select">
+              <option value="">Jaipur</option>
+              <option value="Alipur">Alipur</option>
+              <option value="Bawana">Bawana</option>
+              <option value="Central Delhi">Central Delhi</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Deoli">Deoli</option>
+              <option value="East Delhi">East Delhi</option>
+              <option value="Karol Bagh">Karol Bagh</option>
+              <option value="Najafgarh">Najafgarh</option>
+              <option value="Nangloi Jat">Nangloi Jat</option>
+              <option value="Narela">Narela</option>
+              <option value="New Delhi">New Delhi</option>
+              <option value="North Delhi">North Delhi</option>
+              <option value="North East Delhi">North East Delhi</option>
+              <option value="North West Delhi">North West Delhi</option>
+              <option value="Pitampura">Pitampura</option>
+              <option value="Rohini">Rohini</option>
+              <option value="South Delhi">South Delhi</option>
+              <option value="South West Delhi">South West Delhi</option>
+              <option value="West Delhi">West Delhi</option>
+            </select>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="search" placeholder="Search for restaurant, cuisine or a dish">
+            <label for="search"></label>
+            
+             
+      
+      </div>
+  
+  </body>
+</html>

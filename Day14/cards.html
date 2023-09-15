@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cards{
+            /* margin-bottom: 5px; */
+            display: block;
+            text-align: center;
+            /* padding-bottom: 5px; */
+        }
+        .card{
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 2px;
+            margin-bottom: 5px;
+            padding-bottom: 5px;
+        }
+        button{
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .card:hover{
+            transform: scale(1.01);
+            border: 2px solid blue;
+            transition: transor;
+        }
+        @media screen and (min-width:480px) and (max-width:768px) {
+            .card{
+                width: 50%;
+                
+                text-align: center;
+                
+                margin: 2px;
+            }
+            .cards{
+                
+                margin: 2px;
+            }
+            
+        }
+        @media screen and (max-width:480px) {
+            img{
+                display: none;
+            }
+            
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <div class="card" id="card1">
+            <h1>Destination1</h1>
+            <img src="../Day-3/images/OIP-removebg-preview.png" alt="">
+            <p>Description of destination 1</p>
+            <button>Explore now</button>
+        </div>
+        <div class="card" id="card2">
+            <h1>Destination2</h1>
+            <img src="../Day-3/images/OIP-removebg-preview.png" alt="">
+            <p>Description of destination 2</p>
+            <button>Explore now</button>
+        </div>
+    </div>
+</body>
+</html>
