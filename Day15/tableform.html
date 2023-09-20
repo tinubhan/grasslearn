@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+       
+        td .heads{
+            background-color: aqua;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Creating form using table</h1>
+    <table>
+        <tr>
+            <td class="heads"><label for="name" id="name" >Name</label></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td class="heads"><label for="class" id="class" >Class</label></td>
+            <td>
+                <select name="class" id="class">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                </select>
+                
+            </td>
+            <td><span>Year</span></td>
+        </tr>
+        <tr>
+            <td class="heads"><label for="qualification" id="qualification" >Qualification</label></td>
+            <td>
+                <select name="qualification" id="qualification">
+                <option value="Tech">B.Tech</option>
+                <option value="com">B.com</option>
+                </select>
+                
+            </td>
+        </tr>
+        <tr>
+            <td class="heads"><label for="email" id="email" >Email</label></td>
+            <td><input type="email"></td>
+        </tr>
+        <tr>
+            <td class="heads"><label for="address" id="address" >Address</label></td>
+            <td>
+            <textarea name="Address" id="address" cols="30" rows="10"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td class="heads">
+                <label for="file" >Upload Photo</label>
+            </td>
+            <td><input type="file" name="file" id="file"></td>
+            
+        </tr>
+        <tr>
+            <td>
+                <label for="name" id="name" class="heads"></label>
+            </td>
+            <td>
+                <button>Register</button>
+            </td>
+            <td>
+                <button>Clear</button>
+            </td>
+        </tr>
+    </table>
+  </body>
+</html>
