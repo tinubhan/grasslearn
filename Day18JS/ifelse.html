@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+    //   var age = parseInt(prompt("What is your age"));
+
+    //   if (age > 18) {
+    //     console.log("caste vote");
+    //   } else {
+    //     console.log("no you cant", +age);
+    //     console.log("no you cant", age, "hello");
+    //     console.log(`sorry you, ${age} , parse`);
+    //     let result= 18 - age
+    //     console.log(result)
+    //     alert("you have to be", result, "more to caste vote")
+    //   }
+    var age = parseInt(prompt("What is your age"));
+    if(typeof age!="number")
+    {
+        alert("please give input in number only")
+    }
+    else if (age > 18) {
+        console.log("caste vote")
+    } else if (age < 18){
+        console.log(`sorry you, ${age} , parse`);
+    }
+
+    </script>
+  </body>
+</html>
