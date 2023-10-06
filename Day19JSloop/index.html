@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str="";
+       let arr= ["dog","racecar","car"]
+
+       for(i=0;i<arr.length-1;i++)
+       {
+            if(arr[i].length>arr[i+1].length)
+            {
+                var len=arr[i+1].length
+            }
+            else{
+                var len=arr[i].length
+            }
+       }
+       
+      
+       for(j=0;j<len;j++)
+       {
+        var prex=arr[0][j]
+        for(i=0;i<arr.length;i++)
+        {
+            if(arr[i][j]!=prex)
+            {
+                var prex=""
+            }
+            else{
+                
+            }
+        }
+        str=str+prex
+        
+
+       
+       }
+       console.log(str)
+      
+    </script>
+</body>
+</html>

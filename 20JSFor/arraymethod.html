@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=["grapes","banana","Pineapple"]
+        console.log(arr.length)
+        arr.unshift("kiwi")
+        arr.unshift("apple")
+        console.log(arr)
+        console.log(arr.shift("papaya"))
+        console.log(arr)
+        //shift removes first element, unshift puts element on first
+        let str=arr.join("-")
+        //if nothing pass in join it will separate by , 
+        console.log(str)
+
+        let arr1=str.split("-")
+
+ console.log("String to array", arr1)
+
+ let str2="apcle"
+
+ for(let i=str2.length-1;i>=0;i--)
+ {
+    console.log(str2.charAt(i))
+ }
+ 
+    </script>
+</body>
+</html>
