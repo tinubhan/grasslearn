@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form" action="" style="width: 1000px;">
+        <div id="top_part">
+            <div id="left-part">
+                <h1 id="heading-blue" >Thursday, 10th</h1>
+                <h6 id="month-val">December</h6>
+            </div>
+            <div id="noOfTask">
+                <p id="task-count">12</p>
+            </div>
+        </div>
+
+        <div id="middle_part">
+            <div id="hrule">
+                <hr>
+            </div>
+            <div id="plusSign">
+                <p id="plussign">+</p>
+            </div>
+        </div>
+        
+        <button id="button" onclick="addItemFunc(event)">add item</button>
+        <br>
+        
+        <div id="lastpart" style="display: flex;justify-content: space-between;width: 100%;">
+            <div>
+                <input type="checkbox" id="task1" >
+            </div>
+            <div id="tasklist" style="display: flex ;justify-content: space-between;width: 100%;">
+                <p>Morning run</p>
+                <p id="curtime">jj</p>
+            </div>
+            
+            <!-- <br> -->
+            <br/>
+        </div>
+    </form>
+    <script>
+        let count=1
+        function addItemFunc(e){
+            e.preventDefault()
+          
+            let taskList=document.getElementById("tasklist")
+            let ttdiv=document.createElement("div")
+            ttdiv.innerHTML=
+            `<div>
+                <input type="checkbox" id="task1" > Morning run
+            </div>
+            <p id="curtime">jj</p><br/>`
+            console.log(ttdiv)
+            taskList.appendChild(ttdiv)
+        }
+    </script>
+</body>
+</html>

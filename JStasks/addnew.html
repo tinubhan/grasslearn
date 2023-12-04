@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Form Elements</title>
+    <style>
+      .container {
+        max-width: 400px;
+        margin: 0 auto; 
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form id="dynamicForm" onsubmit="handleSubmit(event)">
+        <div id="inputContainer">
+          <label for="item1">Item 1:</label>
+          <input type="text" id="item1" name="item[]" /><br /><br />
+        </div>
+        <button type="button" onclick="addInput()">Add More</button>
+        <button type="button" onclick="removeInput()">Remove Last</button
+        ><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <!-- <script src="add-comp.js"></script> -->
+    <script>
+        let count=1
+        function addInput()
+        {
+            count++
+            let newBlock=document.createElement("div")
+            newBlock.innerHTML=`<label for=item${count}>  Item ${count}:</label>
+          <input type="text" id="item${count}" name="item[]" /><br /><br />`
+          document.getElementById("inputContainer").appendChild(newBlock)
+        }
+        function handleSubmit(e)
+        {
+            e.preventDefault();
+            let arr=[]
+         
+         for(let i=1;i<=count;i++)
+         {
+           let value1=document.getElementById(`item${i}`).value
+           arr.push(value1)
+         }
+         console.log(arr)
+
+        }
+          
+        
+        function removeInput()
+        {
+            
+            document.getElementById(`item${count}`).parentElement.remove()
+            
+            count--
+        }
+
+
+
+    </script>
+  </body>
+</html>
+ 
